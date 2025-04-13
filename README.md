@@ -18,11 +18,7 @@ password: admin
 
 note: Super admin can add new admins
 
-# Demo <br>
-
-https://user-images.githubusercontent.com/45914161/147848507-1b93a183-fe78-4862-b332-1742891f486e.mp4
-
-# INTRODUCTION: <br>
+# INTRODUCTION: 
 
 E-Learning System is a desktop-based Windows application developed in Java with Swing and AWT. This project aims at serving Students and Teachers in Online based learning.
 Admins can add subjects, Teachers can add courses in a particular subject and Students can Enroll courses and study them, and also Students can message other participants in a particular course except the Teacher teaching that course.
