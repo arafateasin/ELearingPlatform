@@ -99,3 +99,28 @@ Message_ID int Not Null,
 CONSTRAINT message_ID_fk Foreign Key (Message_ID) References Messages(Message_ID) ON DELETE CASCADE
 ) ENGINE = InnoDB DEFAULT CHARSET = latin1;
 
+-- Insert Default Teachers
+INSERT INTO Teacher (fname, lname, Email_ID, username, password, Gender, Registration_Date, Last_Login)
+VALUES
+('John', 'Doe', 'john.doe@teacher.com', 'johndoe', 'password123', 'Male', CURDATE(), NULL),
+('Jane', 'Smith', 'jane.smith@teacher.com', 'janesmith', 'password123', 'Female', CURDATE(), NULL);
+
+-- Insert Default Students
+INSERT INTO Student (fname, lname, Email_ID, username, password, Gender, Registration_Date, Last_Login)
+VALUES
+('Alice', 'Brown', 'alice.brown@student.com', 'alicebrown', 'password123', 'Female', CURDATE(), NULL),
+('Bob', 'Johnson', 'bob.johnson@student.com', 'bobjohnson', 'password123', 'Male', CURDATE(), NULL);
+
+-- Insert Default Subjects
+INSERT INTO Subjects (Name, Adminid)
+VALUES
+('Mathematics', 1),
+('Physics', 1),
+('Computer Science', 1);
+
+-- Insert Default Courses
+INSERT INTO Courses (Name, Description, Content, teacherID, Subject_ID)
+VALUES
+('Algebra Basics', 'Learn the fundamentals of algebra.', 'Course content for Algebra Basics.', 1, 1),
+('Introduction to Physics', 'Explore the basics of physics.', 'Course content for Introduction to Physics.', 2, 2),
+('Programming 101', 'Learn the basics of programming.', 'Course content for Programming 101.', 1, 3);

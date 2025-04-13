@@ -3,6 +3,7 @@ package javasemesterproject;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Font;
+
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -30,9 +31,14 @@ public class AboutDevelopers extends JFrame{
         title.setOpaque(true);
         add(title, BorderLayout.NORTH);
         
-        String[][] rowData = {{"70078386", "Arafat EAsin", "<html>Modules Development<html>"},
-                               {"70078531", "Sarkar Md Fahim", "<html>Modules Integration<br/> and Code Refinement</html>"},
-                               {"70077417", "Alam Jahedul", "<html>Database Connectivity<br/> and Design</html>"}};
+        String[][] rowData = {
+            {"202309010883", "Arafat Easin", "<html>Database Integration<br/>Admin Module<br/>Loading Screen<br/>Main Logic</html>"},
+            {"202310010041", "Alam Jahedul", "<html>Teacher Module<br/>Account Management<br/>View Students</html>"},
+            {"202309010835", "Sarkar Md Fahim", "<html>Student Module<br/>Course Enrollment<br/>Study Courses</html>"},
+            {"202401010614", "Rumi Sufi Ahamed", "<html>Messaging System<br/>GUI Enhancements</html>"},
+            {"202401010437", "Durlov Roy Durjoy", "<html>Admin Account Management<br/>Error Handling</html>"},
+            {"202401010438", "Puja Rani Dey", "<html>About Section<br/>Testing and Debugging</html>"}
+        };
         String columns[] = {"SAP ID", "Name", "Contributions"};
         
         tablePanel = new JPanel(new BorderLayout());

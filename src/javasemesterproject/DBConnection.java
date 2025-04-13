@@ -13,7 +13,7 @@ public class DBConnection {
         try{
             //Register JDBC Driver with Class's Static method
             Class.forName("com.mysql.jdbc.Driver");
-            c = DriverManager.getConnection("jdbc:mysql://localhost:3306/ELearningSystem","admin","admin");
+            c = DriverManager.getConnection("jdbc:mysql://localhost:3306/ELearningSystem","root","S34SMOK315140710");
             s = c.createStatement();
         }
         catch(ClassNotFoundException | SQLException e){
